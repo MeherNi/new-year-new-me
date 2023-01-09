@@ -42,7 +42,6 @@
 .header {
     min-height: 100vh;
     display: flex;
-    align-items: right;
     justify-content: right;
     background-image: url('../images/banner/banner1.png');
     background-position: center;
@@ -50,12 +49,22 @@
     background-repeat: no-repeat;
 
 }
-
 .about {
     display: flex;
     align-items: center;
     margin: 0 200px;
 }
+
+.about-title {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 24px;
+}
+.about-content{
+    margin-left: 100px;
+}
+
+/* palns section */
 
 .plans-container {
     display: flex;
@@ -91,15 +100,132 @@
     font-weight: 500;
     font-size: 25px;
 }
-.section{
-    display: flex;
+
+/* gradient overlay */
+.section {
     width: 60vw;
     height: 40vh;
-    background-image: url('../images/gradient2.png'), url('../images/watch.png');
+    background-image: url('../images/watch.png');
     background-repeat: no-repeat;
     background-position: center, center;
-    background-size: cover,50px;
+    background-size: cover, 50px;
     border-radius: 8px;
-    margin: 120px 230px ;
-    
+    margin: 120px 230px;
+    display: flex;
+    position: relative;
+
+}
+
+.btn2-primary {
+    height: 64px;
+    background: #fff;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 20px;
+    border: 0;
+    padding: 20px 35px;
+    color: #FD6E0A;
+    z-index: 1;
+    margin-top: 24px;
+}
+
+.color-overlay {
+    background: linear-gradient(to top right, red, #fff);
+    width: 60vw;
+    height: 40vh;
+    opacity: .6;
+    position: absolute;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+    z-index: 1;
+}
+
+.sub-section {
+    margin-top: 80px;
+    align-items: center;
+    justify-content: left;
+    margin-left: 40px;
+    text-align: left;
+    z-index: 2;
+}
+
+/* contact styles */
+.conatct {
+    display: flex;
+    background: #151414;
+    width: auto;
+    height: 50vh;
+    gap: 300px;
+    text-align: center;
+    justify-content: center;
+}
+
+.conatct .contact-title {
+    text-align: left;
+    color: #F8F8F8;
+    font-weight: 700;
+    font-size: 45px;
+    padding-bottom: 20px;
+
+}
+
+
+.contact-description {
+    text-align: left;
+    padding-top: 20px;
+}
+
+.contact-description p {
+    color: #fff;
+}
+
+.contact-description img {
+    padding-top: 25px;
+    padding-right: 18px;
+}
+
+.contact-description a {
+    text-decoration: none;
+}
+
+.contact-description2 {
+
+    padding-top: 25px;
+    text-align: left;
+}
+
+.contact-description2 h4 {
+
+    font-weight: 600;
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.contact-description2 input {
+    background: #151414;
+    display: block;
+    font-weight: 400;
+    font-size: 18px;
+    padding-right: 150px;
+    border-radius: 5px #ddd;
+    padding-top: 20px;
+    padding-bottom: 21px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+}
+
+.contact-description2 .btn-primary {
+    height: 64px;
+    background: #fff;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 20px;
+    border: 0;
+    padding: 20px 35px;
+    color: #F15B22;
 }
